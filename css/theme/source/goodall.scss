@@ -1,0 +1,116 @@
+/**
+ * A theme for reveal.js.
+ * 
+ * Copyright (C) 2013 John Goodall, http://jgoodall.github.com/
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+
+$themeFonts: "Gill Sans", "Helvetica Neue", "Helvetica";
+
+// Background of the presentation
+$backgroundColor: #ECECE7;
+
+// Primary/body text
+$mainFont: $themeFonts;
+$mainFontSize: 34px;
+$mainColor: #333;
+
+// Headings
+// h1 is used for titles on title slide
+// h2 is used for headings on each slide
+$headingFont: $themeFonts;
+$headingColor: #318A9E;
+$headingLineHeight: 1.5em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: #3BA5BD;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: transparentize($linkColor, 0.85);
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(240,240,240,1), rgba(255,255,255,1) );
+}
+
+// add spacing after title (h1) and slide headers (h2)
+.reveal h1 {
+  font-size: $mainFontSize * 2.25;
+  margin-bottom: 25px;
+}
+.reveal h2 {
+  font-size: $mainFontSize * 1.75;
+  margin-bottom: 15px;
+}
+.reveal h3 {
+  font-size: $mainFontSize * 1.25;
+  margin-bottom: 5px;
+}
+.reveal h4 {
+  font-size: $mainFontSize;
+  margin-bottom: 5px;
+}
+.reveal h5 {
+  font-size: $mainFontSize * 0.9;
+}
+.reveal h6 {
+  font-size: $mainFontSize * 0.8;
+}
+
+
+// Custom strong tag
+.reveal strong {
+  font-weight: 500;
+  color: $headingColor;
+}
+
+// Custom blockquotes
+.reveal blockquote {
+  font-size: $mainFontSize * 1.25;
+  font-style: normal;
+  padding: 10px 15px;
+  color: #777;
+  box-shadow: none;
+  text-align: left;
+}
+.reveal blockquote:before {
+	font-size: $mainFontSize * 2;
+  color: transparentize( $mainColor, 0.75);
+}
+.reveal blockquote:after {
+  content: none;
+}
+
+// remove borders around images
+.reveal section img {
+	background: rgba(255,255,255,0.12);
+	border: 1px solid $mainColor;
+}
+
+// Custom footer, put outside of all slides at end of HTML
+.footer {
+  font-family: $mainFont;
+  font-size: 24;
+  font-weight: 600;
+  color: transparentize($mainColor, 0.75);
+  position: absolute; 
+  bottom: 10px; 
+  left: 20px; 
+  z-index: 20;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

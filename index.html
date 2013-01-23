@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Visual Analytics at ORNL</title>
+
+		<meta name="description" content="Visual Analytics projects at Oak Ridge National Laboratory">
+		<meta name="author" content="John R Goodall">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/goodall.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Visual Analytics</h1>
+					<h4>Oak Ridge National Laboratory</h4>
+          <br />
+					<p>
+						John Goodall <br />
+            <small>865-446-0611 / jgoodall@ornl.gov</small> <br />
+          </p>
+          <p style="font-size: 85%">
+            Situational Understanding Research Team <br />
+            Cyberspace Sciences and Information Intelligence Research Group	
+					</p>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+            <li>What is <strong>Visual Analytics</strong>?</li>
+            <li>Situational Understanding Research Team</li>
+            <li>Cyber Security Projects</li>
+            <li>Health Care Projects</li>
+          </ul>
+
+					<aside class="notes">
+						notes go here.
+					</aside>
+				</section>
+
+
+        <!-- What is Visual Analytics? -->
+				<section>
+					<h1>What is Visual Analytics?</h1>
+				</section>
+
+				<section>
+					<h2>Information Visualization</h2>
+          
+          <blockquote cite="http://www.infovis-wiki.net/index.php?title=Information_Visualization" style="font-size: 140%;">
+            The purpose of visualization is <strong>insight</strong>, not pictures
+  				</blockquote>
+          <p style="text-align:right; font-size:65%;">
+            - Ben Schneiderman, 1999
+          </p>
+				</section>
+
+        <section>
+          <h2>Visual Analytics is not...</h2>
+          <ul>
+            <li>Static explanatory infographics</li>
+            <li>Scientific visualization</li>
+            <li>Geographic information systems (kind of)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Visual Analytics</h2>
+          <ul>
+            <li>Focus on sensemaking and analytical reasoning</li>
+            <li>Concerned with abstract data</li>
+            <li>Multidisciplinary</li>
+            <li>Information <strong><b>visualization + computation</b></strong></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Visualization</h2>
+          <img src="img/continuum.png" />
+        </section>
+
+        <!-- John Snow -->
+        <section>
+          <h2>Presentation</h2>
+        </section>
+        
+        <section>
+          <h2>London, 1854</h2>
+          <img src="img/snow-cholera.png" alt="Cholera" />
+          
+          <aside class="notes">
+            Cholera struck London in 1854. The poor SoHo neighborhood was one of the hardest hit in London.
+            Dr John Snow had theorized 5 years earlier that Cholera was transmitted by water and food contamination, not by the commonly accepted belief that it was passed through inhalation of contaminated vapors.
+          </aside>
+        </section>
+        
+        <section>
+          <img src="img/snow-map.png" alt="Snow Map" />
+          
+          <aside class="notes">
+            Snow found that in one particular location near the intersection of Cambridge and Broad Street, up to 500 deaths from Cholera occurred within 10 days
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/snow-map-zoom.png" alt="Snow Map Zoom" />
+          
+          <aside class="notes">
+            All but 10 of the deaths were closer to the Broad St. pump than another pump, and 5 of those families used the Broad St. pump.
+          </aside>
+        </section>
+        
+        <section>
+          <h2>Presentation</h2>
+          <img src="img/snow-whitehead.jpg" alt="Reverend Henry Whitehead" />
+          <p>Graphics can tell a story to convince your strongest opponents</p>
+          
+          <aside class="notes">
+            The Reverend Henry Whitehead was a former believer in the Miasma theory of disease (‘bad air’), but was convinced by Snow’s work, in particular his maps showing the pattern of cholera outbreaks around the broad street pump.
+          </aside>
+        </section>        
+
+        <!-- Map of the Market -->
+        <section>
+          <h2>Analysis</h2>
+        </section>
+
+        <section>
+          <img src="img/marketmap-1.png" alt="Marketmap 1">
+          
+          <aside class="notes">
+            What is this mapping?
+          </aside>
+        </section>
+        
+        <section>
+          <img src="img/marketmap-2.png" alt="Marketmap 2">
+          
+          <aside class="notes">
+            April 2008 -- April 2009
+            market cap = size / color = % of change
+            Any idea what companies the green rectangles represent?
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/marketmap-3.png" alt="Marketmap 3">
+          
+          <aside class="notes">
+            Top 5 winners. Family Dollar, Dollar Tree, AutoZone – what does that tell you? Maybe, people are careful about their spending and changing their own oil?
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/marketmap-4.png" alt="Marketmap 4">
+          
+          <aside class="notes">
+            Different timeline - November 2008 - April 2009
+            More green, are we in the rebound?
+          </aside>
+        </section>
+        
+        <section>
+          <h2>Analysis</h2>
+          <ul>
+            <li>Visualization can provide the BIG PICTURE. Anomalies, like winners over the past 12 months, and overall trends, like a market rebound, pop out at you preattentively</li>
+            <li>This visualization is a tool to explore the data</li>
+
+          </ul>
+        </section>
+        
+
+        <section>
+          <h2>Visual Analytics</h2>
+          <img src="img/continuum-visual-analytics.png" />
+        </section>
+
+
+        <!-- Situational Understanding Research Team -->
+				<section>
+					<h1>Situational Understanding Research Team</h1>
+				</section>
+
+        <section>
+          <h2>Mission</h2>
+          <p style="font-size: 1.5em;">
+            Build tools for domain experts that facilitate <strong>situational understanding</strong> and <strong>insight discovery</strong> from large, complex, (streaming), heterogeneous data
+          </p>
+          
+          <aside class="notes">
+            Our mission is to enable users to discover facts about their data, or connections within their data, that would otherwise remain hidden.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Approach to Visual Analytics</h2>
+          <ul>
+            <li>Data is uncertain</li>
+            <li>Automate the repetitive and the mundane</li>
+            <li>Algorithms should not relearn domain knowledge</li>
+            <li>Users' domain knowledge should be captured and used</li>
+            <li>Algorithms should be transparent and understandable</li>
+            <li>Simple displays are good (and can be combined)</li>
+            <li>Give users time to slow down to explore the data</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Research Areas</h2>
+          <div style="font-size: 28px">
+            <ul>
+              <li>Mathematics
+                <ul style="list-style:none">
+                  <li>Probabilistic modeling</li>
+                  <li>Graph modeling &amp; algorithms</li>
+                  <li>Theorems</li>
+                </ul>
+              </li>
+              <li>Human-Computer Interaction
+                <ul style="list-style:none">
+                  <li>Information visualization</li>
+                  <li>Use-centered design</li>
+                  <li>Domain and user modeling</li>
+                  <li>User testing / experimentation</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>Machine Learning
+                <ul style="list-style:none">
+                  <li>Unsupervised learning</li>
+                  <li>Active learning</li>
+                  <li>Online learning</li>
+                </ul>
+              </li>
+              <li>Computing Platforms
+                <ul style="list-style:none">
+                  <li>Streaming platforms &amp; algorithms</li>
+                  <li>Distributed storage &amp; algorithms</li>
+                  <li>Mobile computing</li>
+                  <li>&nbsp; </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+        <!-- Cyber Security Projects -->
+				<section>
+					<h1>Cyber Security Projects</h1>
+				</section>
+
+        <section>
+          <h1>NV</h1>
+          <h3>Nessus Vulnerability Visualization</h3>
+        </section>
+
+        <section>
+          <h2>Nessus Visualization :: Problem</h2>
+          <ul>
+            <li>Vulnerability assessment tools can expose weak points within a system</li>
+            <li>These tools can produce very large data sets in medium/large networks</li>
+            <li>It can be difficult to get the big picture of the security posture of your network from current user interfaces for vulnerability assessment tools</li>
+            <li>It is impossible to compare scans to determine the differences between them - has the network become more vulnerable or more secure?</li>
+            <li>Users domain knowledge is not taken into account</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Nessus Visualization :: Approach</h2>
+          <ul>
+            <li>Develop a web-based visual analytics environment for understanding and prioritizing vulnerability assessment scans</li>
+            <li>Zoomable Treemap displays machines organized by user-defined groupings and sized and colored by the number and severity of vulnerabilities</li>
+            <li>Multiple filters are provided to interact with the data</li>
+            <li>Integrate domain knowledge by groupings and tagging high-value assets</li>
+          </ul>
+          <p style="margin-top: 30px;"><small>
+            <a href="http://ornl-situ.github.com/nv/">demonstration</a>
+          </small></p>
+        </section>
+
+
+        <section>
+          <h1>Situ</h1>
+          <h3>A Scalable Framework for Timely Discovery and Situational Understanding of Cyber Attacks</h3>
+        </section>
+
+        <section>
+          <h2>Situ :: Problem</h2>
+          <ul>
+            <li>Rapidly discovering novel and sophisticated cyber attacks from masses of heterogeneous data and providing situational understanding to analysts are ongoing problems in computer network defense</li>
+            <li>Network defense analysts maintain continually evolving mental models that allow them to differentiate between malicious and benign traffic. However, current systems do not exploit this knowledge</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Situ :: Approach</h2>
+          <ul>
+            <li><strong>Anomaly detection</strong> to remove typical behavior from further analysis</li>
+            <li><strong>Event classification</strong> to label events as benign or malicious and classify and link malicious events into phases of the kill chain</li>
+            <li><strong>Visual analytics</strong> to present results and provide the user interface for visually capturing knowledge</li>
+            <li><strong>User driven feedback</strong> to make suggestions for labeling and capture knowledge from domain experts</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Situ</h2>
+          <img src="img/situ.png" alt="Situ">
+        </section>
+        
+        
+        <section>
+          <h1>Stucco</h1>
+          <h3>Situation and Threat Understanding by Correlating Contextual Observations</h3>
+        </section>
+        
+        <section>
+          <h2>Stucco :: Problem</h2>
+          <ul>
+            <li>Security analysts do not have access to context when analyzing security events</li>
+            <li>There are many data sources that may provide context, but they are not systematically collected or correlated with security events or integrated into analytic and visualization tools</li>
+            <li>Analysts currently mentally juggle inputs from a growing number of data streams</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Stucco :: Approach</h2>
+          <ul>
+            <li>Integrate and visualize social media, new articles and other indicators in context with traditional cyber security data</li>
+            <li>Provide concept graph which users and systems can query to gain context for analysis</li>
+            <li>Display trends of security concepts that relate to a user's environment</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Stucco</h2>
+          <img src="img/stucco.png" alt="Situ">
+        </section>
+
+        
+
+        <!-- Health Care Projects -->
+				<section>
+					<h1>Health Care Projects</h1>
+				</section>
+
+        <section>
+          <h2>CMS Geographic Variation (1)</h2>
+          <ul>
+            <li>Problem: health indicators health indicators vary both geographically and temporally - how can these be visualized?</li>
+            <li>Approach: combine visualizations to show how regions compare by value and by geographic location</li>
+          </ul>
+          <p style="margin-top: 30px;"><small>
+            <a href="http://jgoodall.github.com/projects/cms-geo/">demonstration</a>
+          </small></p>
+        </section>
+
+        <section>
+          <h2>CMS Geographic Variation (2)</h2>
+          <ul>
+            <li>Problem: health indicators vary both geographically and temporally - how can these be visualized?</li>
+            <li>Approach: display small multiples to show how states vary by health indicator and year
+          </ul>
+          <p style="margin-top: 30px;"><small>
+            <a href="http://ornl-situ.github.com/cms-geovar/">demonstration</a>
+          </small></p>
+        </section>
+
+        <section>
+          <h2>CMS Customizable Communities</h2>
+          <ul>
+            <li>Problem: CMS wants to allow citizens to view and download data sets for user-defined communities</li>
+            <li>Approach: web-based system for selecting different geographic regions and presenting how those regions compare to the national average
+          </ul>
+          <p style="margin-top: 30px;"><small>
+            <a href="https://localhost:8001/cmsmart/analyzers/communities/?state=select">demonstration</a>
+          </small></p>
+        </section>
+
+        <!-- End slid -->
+				<section>
+					<h1>Visual Analytics</h1>
+					<h4>Oak Ridge National Laboratory</h4>
+          <br />
+					<p>
+						John Goodall <br />
+            <small>865-446-0611 / jgoodall@ornl.gov</small> <br />
+          </p>
+          <p style="font-size: 85%">
+            Situational Understanding Research Team <br />
+            Cyberspace Sciences and Information Intelligence Research Group	
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+    <div class='footer'>
+      <img src="img/ornl.png" alt="Oak Ridge National Laboratory" />
+    </div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+
+	</body>
+</html>
